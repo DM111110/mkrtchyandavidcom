@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mkrtchyan David</title>
+    <title>Mkrtchyan David | Theoretical Physics & Quantum Computing</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -11,12 +11,12 @@
             theme: {
                 extend: {
                     colors: {
-                        darkBg: 'rgba(47, 47, 47, 1)',
-                        cardBg: '#1f2020',
-                        orangeAccent: 'rgba(255, 197, 12, 1)',
-                        orangeLight: '#ffd642',
-                        textMain: '#f1f5f9',
-                        textMuted: '#94a3b8'
+                        darkBg: '#f3f4f6',
+                        cardBg: '#ffffff',
+                        orangeAccent: 'rgba(217, 119, 6, 1)',
+                        orangeLight: '#d97706',
+                        textMain: '#1f2937',
+                        textMuted: '#4b5563'
                     }
                 }
             }
@@ -28,33 +28,32 @@
             width: 8px;
         }
         ::-webkit-scrollbar-track {
-            background: rgba(47, 47, 47, 1);
+            background: #f3f4f6;
         }
         ::-webkit-scrollbar-thumb {
-            background: rgba(255, 197, 12, 1);
+            background: rgba(217, 119, 6, 0.8);
             border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: rgba(217, 119, 6, 1);
         }
     </style>
 </head>
-<body class="bg-[rgba(47,47,47,1)] text-textMain font-sans antialiased selection:bg-[rgba(255,197,12,1)] selection:text-black overflow-x-hidden relative">
-
-    <!-- Background Canvas for Prominent Molecular Animation -->
-    <canvas id="moleculeCanvas" class="fixed inset-0 pointer-events-none z-0 opacity-90"></canvas>
+<body class="bg-[#f3f4f6] text-textMain font-sans antialiased selection:bg-[rgba(217,119,6,0.2)] selection:text-black overflow-x-hidden relative">
 
     <!-- Navigation Bar -->
-    <header class="fixed top-0 left-0 right-0 z-50 bg-[rgba(47,47,47,0.85)] backdrop-blur-md border-b border-[rgba(255,197,12,0.1)]">
+    <header class="fixed top-0 left-0 right-0 z-50 bg-[#f3f4f6]/90 backdrop-blur-md border-b border-slate-300">
         <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
-            <a href="#hero" class="text-sm md:text-base font-bold tracking-wider text-[rgba(255,197,12,1)] uppercase flex items-center gap-2">
-                <span class="w-2.5 h-2.5 rounded-full bg-[rgba(255,197,12,1)] animate-pulse"></span>
+            <a href="#hero" class="text-sm md:text-base font-bold tracking-wider text-amber-700 uppercase flex items-center gap-2">
+                <span class="w-2.5 h-2.5 rounded-full bg-amber-600"></span>
                 <span>Mkrtchyan David</span>
             </a>
             <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-textMuted">
-                <a href="#about" class="hover:text-[rgba(255,197,12,1)] transition-colors">About</a>
-                <a href="#research" class="hover:text-[rgba(255,197,12,1)] transition-colors">Research & Publication</a>
-                <a href="#notes" class="hover:text-[rgba(255,197,12,1)] transition-colors">Physics Notes</a>
-                <a href="#future" class="hover:text-[rgba(255,197,12,1)] transition-colors">Future Works</a>
+                <a href="#about" class="hover:text-amber-700 transition-colors">About</a>
+                <a href="#research" class="hover:text-amber-700 transition-colors">Research & Publication</a>
+                <a href="#future" class="hover:text-amber-700 transition-colors">Future Works</a>
             </nav>
-            <a href="#contact" class="px-4 py-2 text-xs font-semibold uppercase tracking-wider rounded-full border border-[rgba(255,197,12,0.4)] text-[rgba(255,197,12,1)] hover:bg-[rgba(255,197,12,1)] hover:text-black transition-all">
+            <a href="#contact" class="px-4 py-2 text-xs font-semibold uppercase tracking-wider rounded-full border border-amber-600/40 text-amber-700 hover:bg-amber-600 hover:text-white transition-all">
                 Let's Connect
             </a>
         </div>
@@ -65,17 +64,17 @@
 
         <!-- Hero Section -->
         <section id="hero" class="min-h-[70vh] flex flex-col justify-center items-start space-y-6">
-            <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight text-white uppercase leading-tight">
+            <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight text-slate-900 uppercase leading-tight">
                 Mkrtchyan David
             </h1>
-            <p class="text-xl md:text-2xl font-medium text-[rgba(255,197,12,0.9)] max-w-2xl">
-                Working in theoretical & computational physics, exploring the fundamental mechanics of quantum systems, atomic structures, and subatomic energy states.
+            <p class="text-xl md:text-2xl font-medium text-amber-700 max-w-2xl">
+                Specializing in theoretical physics and quantum computing, exploring quantum algorithms, qubit interactions, and subatomic energy states.
             </p>
             <p class="text-textMuted max-w-xl text-base leading-relaxed">
-                Pushing the boundaries of computational physics by investigating quantum algorithms and complex atomic interactions.
+                Investigating quantum mechanics principles to build advanced algorithmic paradigms and model complex atomic architectures.
             </p>
             <div class="pt-4">
-                <a href="#about" class="px-8 py-4 rounded-xl bg-[rgba(255,197,12,1)] text-black font-semibold text-sm hover:bg-[#ffd642] transition-all shadow-lg shadow-[rgba(255,197,12,0.2)]">
+                <a href="#about" class="px-8 py-4 rounded-xl bg-amber-600 text-white font-semibold text-sm hover:bg-amber-700 transition-all shadow-lg shadow-amber-600/20">
                     Explore About Me
                 </a>
             </div>
@@ -83,74 +82,74 @@
 
         <!-- About Section with Photo/Visual Side -->
         <section id="about" class="space-y-8">
-            <div class="border-l-4 border-[rgba(255,197,12,1)] pl-4">
-                <h2 class="text-3xl font-bold tracking-tight text-white">About Me</h2>
+            <div class="border-l-4 border-amber-600 pl-4">
+                <h2 class="text-3xl font-bold tracking-tight text-slate-900">About Me</h2>
             </div>
             
             <div class="grid md:grid-cols-3 gap-6">
                 <!-- Photo Side Panel -->
-                <div class="p-6 rounded-2xl bg-cardBg border border-[rgba(255,197,12,0.1)] flex flex-col items-center justify-center text-center space-y-4 shadow-xl">
-                    <div class="w-full aspect-square rounded-xl bg-gradient-to-br from-[rgba(255,197,12,0.2)] to-[rgba(47,47,47,1)] border-2 border-[rgba(255,197,12,0.3)] flex items-center justify-center overflow-hidden shadow-inner">
-                        <img src="profile.jpg" alt="Mkrtchyan David" class="w-full h-full object-cover">
+                <div class="p-6 rounded-2xl bg-white border border-slate-300 flex flex-col items-center justify-center text-center space-y-4 shadow-sm">
+                    <div class="w-36 h-36 rounded-2xl bg-gradient-to-br from-amber-100 to-slate-100 border-2 border-amber-200 flex items-center justify-center text-5xl shadow-inner">
+                        ⚛️
                     </div>
                     <div class="space-y-1">
-                        <h3 class="text-lg font-bold text-white">Mkrtchyan David</h3>
-                        <p class="text-xs text-[rgba(255,197,12,0.9)] font-medium">Theoretical & Computational Physics</p>
+                        <h3 class="text-lg font-bold text-slate-900">Mkrtchyan David</h3>
+                        <p class="text-xs text-amber-700 font-medium">Theoretical Physics & Quantum Computing</p>
                     </div>
                 </div>
 
                 <!-- Main Text Content -->
-                <div class="md:col-span-2 p-8 rounded-2xl bg-cardBg border border-[rgba(255,197,12,0.1)] space-y-4 shadow-xl flex flex-col justify-between">
+                <div class="md:col-span-2 p-8 rounded-2xl bg-white border border-slate-300 space-y-4 shadow-sm flex flex-col justify-between">
                     <div class="space-y-4">
                         <p class="text-textMain leading-relaxed text-base">
-                            I am a 16-year-old researcher based in Yerevan, Armenia, deeply immersed in theoretical and computational physics. My academic pursuits focus on quantum computing, atomic-scale simulations, and analyzing complex quantum mechanical systems that govern subatomic interactions.
+                            I am a 16-year-old researcher based in Yerevan, Armenia, focusing deeply on theoretical physics and quantum computing. My academic journey centers around quantum information processing, atomic simulations, and exploring complex quantum mechanical phenomena.
                         </p>
                         <p class="text-textMain leading-relaxed text-base">
-                            By leveraging advanced computational frameworks and emerging quantum algorithms, I investigate molecular behavior, potential energy surfaces, and molecular states that classical hardware struggles to compute efficiently due to exponential scaling limitations.
+                            By studying quantum algorithms and architectural frameworks, I examine molecular dynamics and potential energy landscapes that classical computing architectures cannot efficiently handle.
                         </p>
                         <p class="text-textMain leading-relaxed text-base">
-                            Beyond simulation pipelines, I am dedicated to bridging foundational physics theory with practical computational implementations, contributing to collaborative studies in Armenia, and developing accessible educational resources for fellow students and physics enthusiasts.
+                            My goal is to bridge core physics principles with modern quantum technologies, contributing to local and collaborative research initiatives while expanding educational access in the quantum sciences.
                         </p>
                     </div>
-                    <div class="pt-4 border-t border-white/5 text-xs text-textMuted flex items-center justify-between">
+                    <div class="pt-4 border-t border-slate-200 text-xs text-textMuted flex items-center justify-between">
                         <span>Institution: MSKH (Mkhitar Sebastatsi Educational Complex)</span>
-                        <span class="text-[rgba(255,197,12,1)] font-medium">Yerevan, Armenia</span>
+                        <span class="text-amber-700 font-medium">Yerevan, Armenia</span>
                     </div>
                 </div>
             </div>
 
             <!-- Core Expertise & Languages Grid -->
             <div class="grid md:grid-cols-3 gap-6">
-                <div class="p-8 rounded-2xl bg-cardBg border border-[rgba(255,197,12,0.1)] flex flex-col justify-between shadow-xl">
+                <div class="p-8 rounded-2xl bg-white border border-slate-300 flex flex-col justify-between shadow-sm">
                     <div class="space-y-4">
-                        <h3 class="text-lg font-semibold text-white">Core Expertise</h3>
+                        <h3 class="text-lg font-semibold text-slate-900">Core Expertise</h3>
                         <ul class="space-y-2 text-sm text-textMuted">
                             <li class="flex items-center gap-2">✓ Quantum Mechanics</li>
-                            <li class="flex items-center gap-2">✓ Quantum Computing</li>
-                            <li class="flex items-center gap-2">✓ Atomic & Nuclear Simulations</li>
-                            <li class="flex items-center gap-2">✓ Molecular Physics</li>
+                            <li class="flex items-center gap-2">✓ Quantum Computing & VQE</li>
+                            <li class="flex items-center gap-2">✓ Atomic & Molecular Simulations</li>
+                            <li class="flex items-center gap-2">✓ Subatomic Interactions</li>
                         </ul>
                     </div>
                 </div>
 
-                <div class="md:col-span-2 p-8 rounded-2xl bg-cardBg border border-[rgba(255,197,12,0.1)] shadow-xl space-y-4">
-                    <h3 class="text-lg font-semibold text-white">Languages</h3>
+                <div class="md:col-span-2 p-8 rounded-2xl bg-white border border-slate-300 shadow-sm space-y-4">
+                    <h3 class="text-lg font-semibold text-slate-900">Languages</h3>
                     <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-4">
-                        <div class="p-4 rounded-xl bg-[rgba(47,47,47,0.6)] border border-white/5">
-                            <div class="text-white font-medium">Armenian</div>
-                            <div class="text-[rgba(255,197,12,1)] text-xs mt-1">Fluent (Native)</div>
+                        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
+                            <div class="text-slate-900 font-medium">Armenian</div>
+                            <div class="text-amber-700 text-xs mt-1">Fluent (Native)</div>
                         </div>
-                        <div class="p-4 rounded-xl bg-[rgba(47,47,47,0.6)] border border-white/5">
-                            <div class="text-white font-medium">English</div>
-                            <div class="text-[rgba(255,197,12,1)] text-xs mt-1">Intermediate</div>
+                        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
+                            <div class="text-slate-900 font-medium">English</div>
+                            <div class="text-amber-700 text-xs mt-1">Intermediate</div>
                         </div>
-                        <div class="p-4 rounded-xl bg-[rgba(47,47,47,0.6)] border border-white/5">
-                            <div class="text-white font-medium">French</div>
-                            <div class="text-[rgba(255,197,12,1)] text-xs mt-1">Intermediate</div>
+                        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
+                            <div class="text-slate-900 font-medium">French</div>
+                            <div class="text-amber-700 text-xs mt-1">Intermediate</div>
                         </div>
-                        <div class="p-4 rounded-xl bg-[rgba(47,47,47,0.6)] border border-white/5">
-                            <div class="text-white font-medium">Russian</div>
-                            <div class="text-[rgba(255,197,12,1)] text-xs mt-1">Beginner</div>
+                        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
+                            <div class="text-slate-900 font-medium">Russian</div>
+                            <div class="text-amber-700 text-xs mt-1">Beginner</div>
                         </div>
                     </div>
                 </div>
@@ -159,40 +158,40 @@
 
         <!-- Research & Publication Section -->
         <section id="research" class="space-y-8">
-            <div class="border-l-4 border-[rgba(255,197,12,1)] pl-4">
-                <h2 class="text-3xl font-bold tracking-tight text-white">Research & Publication</h2>
+            <div class="border-l-4 border-amber-600 pl-4">
+                <h2 class="text-3xl font-bold tracking-tight text-slate-900">Research & Publication</h2>
             </div>
             
-            <div class="p-8 md:p-12 rounded-2xl bg-cardBg border border-[rgba(255,197,12,0.2)] space-y-6 shadow-2xl relative overflow-hidden">
-                <div class="absolute top-0 right-0 w-48 h-48 bg-[rgba(255,197,12,0.05)] rounded-full blur-3xl pointer-events-none"></div>
+            <div class="p-8 md:p-12 rounded-2xl bg-white border border-slate-300 space-y-6 shadow-sm relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-48 h-48 bg-amber-100/50 rounded-full blur-3xl pointer-events-none"></div>
                 
                 <div class="flex flex-wrap items-center justify-between gap-4">
-                    <span class="px-3.5 py-1.5 rounded-full bg-[rgba(255,197,12,0.1)] border border-[rgba(255,197,12,0.3)] text-[rgba(255,197,12,1)] text-xs font-semibold">
+                    <span class="px-3.5 py-1.5 rounded-full bg-amber-100 border border-amber-200 text-amber-800 text-xs font-semibold">
                         Published Research Paper (Collaborative Work)
                     </span>
                     <span class="text-xs text-textMuted">Armenian Scientific Contribution</span>
                 </div>
 
-                <h3 class="text-2xl md:text-3xl font-bold text-white leading-snug">
+                <h3 class="text-2xl md:text-3xl font-bold text-slate-900 leading-snug">
                     Investigating Ground State Properties of Lithium Hydride (LiH) Using Variational Quantum Eigensolver (VQE)
                 </h3>
 
                 <div class="space-y-4 text-textMain text-base leading-relaxed">
                     <p>
-                        <strong>Abstract Summary:</strong> Simulating molecules at the quantum level is vital for materials science, energy research, and drug development. Classical computers struggle with these simulations because quantum states grow exponentially. Traditional approximations lose accuracy for complex systems with strong particle interactions.
+                        <strong>Abstract Summary:</strong> Simulating molecular systems at the quantum level is essential for breakthroughs in clean energy storage, materials science, and pharmaceuticals. Traditional computers face massive scaling roadblocks because quantum states grow exponentially with system size.
                     </p>
                     <p>
-                        To overcome this, our collaborative research investigates the ground state properties of <strong>Lithium Hydride (LiH)</strong> using the <strong>Variational Quantum Eigensolver (VQE)</strong>. VQE creates a hybrid feedback loop between a quantum computer and a classical optimizer: the quantum hardware acts as a physical model generating trial energy states, while the classical computer analyzes the energy score and tunes parameters to find the absolute minimum energy level.
+                        To bypass these limits, our research applies the <strong>Variational Quantum Eigensolver (VQE)</strong> to analyze the ground state properties of <strong>Lithium Hydride (LiH)</strong>. VQE establishes a cooperative loop between quantum hardware and classical optimization: the quantum processor evaluates trial energy states, while the classical optimizer refines parameters to locate absolute ground state energy configurations.
                     </p>
                     <p>
-                        With only four electrons, LiH serves as an ideal, crucial molecule for testing early-stage quantum hardware, bridging light hydrogen and heavier lithium properties to pave the way for complex molecular simulations in clean energy and medicine.
+                        As a fundamental four-electron molecule, LiH offers a pristine testing ground for early-stage quantum hardware, bridging light hydrogen dynamics with heavier atomic structures to pave the path toward scalable quantum simulations.
                     </p>
                 </div>
 
                 <!-- PDF Link Button -->
-                <div class="pt-6 border-t border-white/10 flex flex-wrap items-center justify-between gap-4">
+                <div class="pt-6 border-t border-slate-200 flex flex-wrap items-center justify-between gap-4">
                     <span class="text-xs text-textMuted">Access the full publication document:</span>
-                    <a href="https://davitmkrtchyan1.wordpress.com/wp-content/uploads/2025/10/mqsim-research.pdf" target="_blank" class="inline-flex items-center gap-3 px-6 py-3 rounded-xl bg-[rgba(255,197,12,1)] text-black font-bold text-sm hover:bg-[#ffd642] transition-all shadow-lg shadow-[rgba(255,197,12,0.2)]">
+                    <a href="https://davitmkrtchyan1.wordpress.com/wp-content/uploads/2025/10/mqsim-research.pdf" target="_blank" class="inline-flex items-center gap-3 px-6 py-3 rounded-xl bg-amber-600 text-white font-bold text-sm hover:bg-amber-700 transition-all shadow-md shadow-amber-600/20">
                         <span>📄</span>
                         <span>View Research Paper (PDF)</span>
                     </a>
@@ -200,62 +199,39 @@
             </div>
         </section>
 
-        <!-- Physics Notes Section (English) -->
-        <section id="notes" class="space-y-8">
-            <div class="border-l-4 border-[rgba(255,197,12,1)] pl-4">
-                <h2 class="text-3xl font-bold tracking-tight text-white">Physics Notes</h2>
-            </div>
-
-            <div class="p-8 md:p-10 rounded-2xl bg-cardBg border border-[rgba(255,197,12,0.1)] space-y-6 shadow-xl">
-                <div class="space-y-3">
-                    <h3 class="text-xl font-bold text-white">Helpful Physics Notes & Formulas</h3>
-                    <p class="text-textMain leading-relaxed text-base">
-                        This section contains curated physics notes, theoretical summaries, and formula guides compiled to assist students and physics enthusiasts in understanding fundamental and advanced physical concepts.
-                    </p>
-                </div>
-
-                <div class="pt-2">
-                    <a href="https://docs.google.com/document/d/1KOw6aUZ3pXd-vGYisTSYbG3K_-AbWxg0nU2-ztWmKgg/edit?usp=sharing" target="_blank" class="inline-flex items-center gap-3 px-7 py-3.5 rounded-xl bg-cardBg border-2 border-[rgba(255,197,12,1)] text-[rgba(255,197,12,1)] font-semibold text-sm hover:bg-[rgba(255,197,12,1)] hover:text-black transition-all shadow-lg shadow-[rgba(255,197,12,0.1)]">
-                        <span>📚</span>
-                        <span>Open Physics Notes (Google Docs)</span>
-                    </a>
-                </div>
-            </div>
-        </section>
-
         <!-- Future Works Section (4 Parts) -->
         <section id="future" class="space-y-8">
-            <div class="border-l-4 border-[rgba(255,197,12,1)] pl-4">
-                <h2 class="text-3xl font-bold tracking-tight text-white">Future Works</h2>
+            <div class="border-l-4 border-amber-600 pl-4">
+                <h2 class="text-3xl font-bold tracking-tight text-slate-900">Future Works</h2>
             </div>
             
             <div class="grid md:grid-cols-2 gap-6">
-                <div class="p-8 rounded-2xl bg-cardBg border border-[rgba(255,197,12,0.1)] space-y-3 shadow-xl">
-                    <div class="text-[rgba(255,197,12,1)] font-bold text-xl">01</div>
-                    <h3 class="text-xl font-bold text-white">Advanced Quantum Algorithms</h3>
+                <div class="p-8 rounded-2xl bg-white border border-slate-300 space-y-3 shadow-sm">
+                    <div class="text-amber-700 font-bold text-xl">01</div>
+                    <h3 class="text-xl font-bold text-slate-900">Advanced Quantum Algorithms</h3>
                     <p class="text-textMuted text-sm leading-relaxed">
-                        Expanding beyond VQE to explore hardware-efficient ansatz designs and error mitigation techniques for noisy intermediate-scale quantum (NISQ) systems.
+                        Expanding beyond standard VQE to design noise-resilient ansatz structures and error mitigation protocols tailored for near-term quantum processors.
                     </p>
                 </div>
-                <div class="p-8 rounded-2xl bg-cardBg border border-[rgba(255,197,12,0.1)] space-y-3 shadow-xl">
-                    <div class="text-[rgba(255,197,12,1)] font-bold text-xl">02</div>
-                    <h3 class="text-xl font-bold text-white">Larger Molecular Systems</h3>
+                <div class="p-8 rounded-2xl bg-white border border-slate-300 space-y-3 shadow-sm">
+                    <div class="text-amber-700 font-bold text-xl">02</div>
+                    <h3 class="text-xl font-bold text-slate-900">Multi-Electron Systems</h3>
                     <p class="text-textMuted text-sm leading-relaxed">
-                        Scaling simulations from Lithium Hydride to multi-electron systems relevant to hydrogen storage materials and photovoltaic cell development.
+                        Scaling quantum simulation frameworks from diatomic molecules like Lithium Hydride to complex multi-electron compounds relevant to energy cells.
                     </p>
                 </div>
-                <div class="p-8 rounded-2xl bg-cardBg border border-[rgba(255,197,12,0.1)] space-y-3 shadow-xl">
-                    <div class="text-[rgba(255,197,12,1)] font-bold text-xl">03</div>
-                    <h3 class="text-xl font-bold text-white">Nuclear & Atomic Modeling</h3>
+                <div class="p-8 rounded-2xl bg-white border border-slate-300 space-y-3 shadow-sm">
+                    <div class="text-amber-700 font-bold text-xl">03</div>
+                    <h3 class="text-xl font-bold text-slate-900">Quantum Error Mitigation</h3>
                     <p class="text-textMuted text-sm leading-relaxed">
-                        Investigating nuclear binding energies and subatomic particle interactions using high-performance computational models alongside quantum frameworks.
+                        Researching active techniques to preserve coherence and minimize decoherence errors in noisy intermediate-scale quantum (NISQ) devices.
                     </p>
                 </div>
-                <div class="p-8 rounded-2xl bg-cardBg border border-[rgba(255,197,12,0.1)] space-y-3 shadow-xl">
-                    <div class="text-[rgba(255,197,12,1)] font-bold text-xl">04</div>
-                    <h3 class="text-xl font-bold text-white">Open Source Research Tools</h3>
+                <div class="p-8 rounded-2xl bg-white border border-slate-300 space-y-3 shadow-sm">
+                    <div class="text-amber-700 font-bold text-xl">04</div>
+                    <h3 class="text-xl font-bold text-slate-900">Open Source Quantum Tools</h3>
                     <p class="text-textMuted text-sm leading-relaxed">
-                        Developing accessible simulation pipelines and open-source computational toolkits to assist researchers and students in exploring quantum chemistry.
+                        Building accessible software toolkits and simulation pipelines to empower students and researchers entering the field of quantum chemistry.
                     </p>
                 </div>
             </div>
@@ -263,58 +239,58 @@
 
         <!-- Contact Section -->
         <section id="contact" class="space-y-8 pt-8">
-            <div class="border-l-4 border-[rgba(255,197,12,1)] pl-4 space-y-2">
-                <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-white">Contact</h2>
+            <div class="border-l-4 border-amber-600 pl-4 space-y-2">
+                <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-slate-900">Contact</h2>
                 <p class="text-textMain text-base md:text-lg leading-relaxed max-w-2xl">
-                    I am always open to discussing theoretical physics, quantum computing simulations, potential academic partnerships, or collaborative research initiatives. Feel free to reach out directly through email or phone.
+                    I am always open to discussing theoretical physics, quantum computing architectures, potential academic partnerships, or collaborative research initiatives. Feel free to reach out directly through email or phone.
                 </p>
             </div>
 
             <div class="grid md:grid-cols-2 gap-6">
-                <a href="mailto:mkrtchyan.systems@gmail.com" class="p-8 rounded-3xl bg-cardBg border-2 border-[rgba(255,197,12,0.3)] hover:border-[rgba(255,197,12,1)] transition-all flex items-center gap-6 group shadow-2xl">
-                    <div class="w-16 h-16 rounded-2xl bg-[rgba(255,197,12,0.1)] flex items-center justify-center text-[rgba(255,197,12,1)] group-hover:bg-[rgba(255,197,12,1)] group-hover:text-black transition-all text-xl font-bold shrink-0">
+                <a href="mailto:mkrtchyan.systems@gmail.com" class="p-8 rounded-3xl bg-white border-2 border-slate-300 hover:border-amber-600 transition-all flex items-center gap-6 group shadow-sm">
+                    <div class="w-16 h-16 rounded-2xl bg-amber-100 flex items-center justify-center text-amber-700 group-hover:bg-amber-600 group-hover:text-white transition-all text-xl font-bold shrink-0">
                         @
                     </div>
                     <div>
-                        <div class="text-xs text-[rgba(255,197,12,0.9)] uppercase tracking-widest font-bold">Email Me</div>
-                        <div class="text-white font-bold text-base md:text-lg mt-1 group-hover:text-[rgba(255,197,12,1)] transition-colors break-all">mkrtchyan.systems@gmail.com</div>
+                        <div class="text-xs text-amber-700 uppercase tracking-widest font-bold">Email Me</div>
+                        <div class="text-slate-900 font-bold text-base md:text-lg mt-1 group-hover:text-amber-700 transition-colors break-all">mkrtchyan.systems@gmail.com</div>
                     </div>
                 </a>
 
-                <a href="tel:+374044221640" class="p-8 rounded-3xl bg-cardBg border-2 border-[rgba(255,197,12,0.3)] hover:border-[rgba(255,197,12,1)] transition-all flex items-center gap-6 group shadow-2xl">
-                    <div class="w-16 h-16 rounded-2xl bg-[rgba(255,197,12,1)]/10 flex items-center justify-center text-[rgba(255,197,12,1)] group-hover:bg-[rgba(255,197,12,1)] group-hover:text-black transition-all text-xl font-bold shrink-0">
+                <a href="tel:+374044221640" class="p-8 rounded-3xl bg-white border-2 border-slate-300 hover:border-amber-600 transition-all flex items-center gap-6 group shadow-sm">
+                    <div class="w-16 h-16 rounded-2xl bg-amber-100 flex items-center justify-center text-amber-700 group-hover:bg-amber-600 group-hover:text-white transition-all text-xl font-bold shrink-0">
                         📞
                     </div>
                     <div>
-                        <div class="text-xs text-[rgba(255,197,12,0.9)] uppercase tracking-widest font-bold">Phone Number</div>
-                        <div class="text-white font-bold text-base md:text-lg mt-1 group-hover:text-[rgba(255,197,12,1)] transition-colors">+374 044 221640</div>
+                        <div class="text-xs text-amber-700 uppercase tracking-widest font-bold">Phone Number</div>
+                        <div class="text-slate-900 font-bold text-base md:text-lg mt-1 group-hover:text-amber-700 transition-colors">+374 044 221640</div>
                     </div>
                 </a>
             </div>
 
-            <!-- Social Media Buttons (Matched Size and Real SVG Icons) -->
+            <!-- Social Media Buttons -->
             <div class="grid md:grid-cols-2 gap-6 pt-2">
-                <a href="https://www.instagram.com/david_mkrtchyan2010/?hl=en" target="_blank" class="p-8 rounded-3xl bg-cardBg border-2 border-[rgba(255,197,12,0.3)] hover:border-[rgba(255,197,12,1)] transition-all flex items-center gap-6 group shadow-2xl">
-                    <div class="w-16 h-16 rounded-2xl bg-[rgba(255,197,12,0.1)] flex items-center justify-center text-[rgba(255,197,12,1)] group-hover:bg-[rgba(255,197,12,1)] group-hover:text-black transition-all shrink-0">
+                <a href="https://www.instagram.com/david_mkrtchyan2010/?hl=en" target="_blank" class="p-8 rounded-3xl bg-white border-2 border-slate-300 hover:border-amber-600 transition-all flex items-center gap-6 group shadow-sm">
+                    <div class="w-16 h-16 rounded-2xl bg-amber-100 flex items-center justify-center text-amber-700 group-hover:bg-amber-600 group-hover:text-white transition-all shrink-0">
                         <svg class="w-7 h-7 fill-current" viewBox="0 0 24 24">
                             <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
                         </svg>
                     </div>
                     <div>
-                        <div class="text-xs text-[rgba(255,197,12,0.9)] uppercase tracking-widest font-bold">Instagram</div>
-                        <div class="text-white font-bold text-base md:text-lg mt-1 group-hover:text-[rgba(255,197,12,1)] transition-colors break-all">david_mkrtchyan2010</div>
+                        <div class="text-xs text-amber-700 uppercase tracking-widest font-bold">Instagram</div>
+                        <div class="text-slate-900 font-bold text-base md:text-lg mt-1 group-hover:text-amber-700 transition-colors break-all">david_mkrtchyan2010</div>
                     </div>
                 </a>
 
-                <a href="https://github.com/DMkrtchyan2010" target="_blank" class="p-8 rounded-3xl bg-cardBg border-2 border-[rgba(255,197,12,0.3)] hover:border-[rgba(255,197,12,1)] transition-all flex items-center gap-6 group shadow-2xl">
-                    <div class="w-16 h-16 rounded-2xl bg-[rgba(255,197,12,0.1)] flex items-center justify-center text-[rgba(255,197,12,1)] group-hover:bg-[rgba(255,197,12,1)] group-hover:text-black transition-all shrink-0">
+                <a href="https://github.com/DMkrtchyan2010" target="_blank" class="p-8 rounded-3xl bg-white border-2 border-slate-300 hover:border-amber-600 transition-all flex items-center gap-6 group shadow-sm">
+                    <div class="w-16 h-16 rounded-2xl bg-amber-100 flex items-center justify-center text-amber-700 group-hover:bg-amber-600 group-hover:text-white transition-all shrink-0">
                         <svg class="w-7 h-7 fill-current" viewBox="0 0 24 24">
                             <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
                         </svg>
                     </div>
                     <div>
-                        <div class="text-xs text-[rgba(255,197,12,0.9)] uppercase tracking-widest font-bold">GitHub</div>
-                        <div class="text-white font-bold text-base md:text-lg mt-1 group-hover:text-[rgba(255,197,12,1)] transition-colors break-all">DMkrtchyan2010</div>
+                        <div class="text-xs text-amber-700 uppercase tracking-widest font-bold">GitHub</div>
+                        <div class="text-slate-900 font-bold text-base md:text-lg mt-1 group-hover:text-amber-700 transition-colors break-all">DMkrtchyan2010</div>
                     </div>
                 </a>
             </div>
@@ -323,76 +299,9 @@
     </main>
 
     <!-- Footer -->
-    <footer class="border-t border-[rgba(255,197,12,0.1)] py-10 text-center text-xs text-textMuted relative z-10">
-        <p>© 2026 Mkrtchyan David. All rights reserved. Theoretical & Computational Physics.</p>
+    <footer class="border-t border-slate-300 py-10 text-center text-xs text-textMuted relative z-10 bg-[#f3f4f6]">
+        <p>© 2026 Mkrtchyan David. All rights reserved. Theoretical Physics & Quantum Computing.</p>
     </footer>
 
-    <!-- Background Molecular Animation Script -->
-    <script>
-        const canvas = document.getElementById('moleculeCanvas');
-        const ctx = canvas.getContext('2d');
-
-        function resizeCanvas() {
-            canvas.width = window.innerWidth;
-            canvas.height = window.innerHeight;
-        }
-        resizeCanvas();
-        window.addEventListener('resize', resizeCanvas);
-
-        const particles = [];
-        const particleCount = 40;
-
-        for (let i = 0; i < particleCount; i++) {
-            particles.push({
-                x: Math.random() * canvas.width,
-                y: Math.random() * canvas.height,
-                vx: (Math.random() - 0.5) * 0.7,
-                vy: (Math.random() - 0.5) * 0.7,
-                radius: Math.random() * 4.5 + 2.5
-            });
-        }
-
-        function animate() {
-            ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-            ctx.strokeStyle = 'rgba(255, 197, 12, 0.35)';
-            ctx.lineWidth = 1.5;
-
-            for (let i = 0; i < particles.length; i++) {
-                for (let j = i + 1; j < particles.length; j++) {
-                    const dx = particles[i].x - particles[j].x;
-                    const dy = particles[i].y - particles[j].y;
-                    const dist = Math.sqrt(dx * dx + dy * dy);
-
-                    if (dist < 180) {
-                        ctx.beginPath();
-                        ctx.moveTo(particles[i].x, particles[i].y);
-                        ctx.lineTo(particles[j].x, particles[j].y);
-                        ctx.stroke();
-                    }
-                }
-            }
-
-            for (let p of particles) {
-                p.x += p.vx;
-                p.y += p.vy;
-
-                if (p.x < 0 || p.x > canvas.width) p.vx *= -1;
-                if (p.y < 0 || p.y > canvas.height) p.vy *= -1;
-
-                ctx.beginPath();
-                ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
-                ctx.fillStyle = 'rgba(255, 197, 12, 0.85)';
-                ctx.shadowBlur = 16;
-                ctx.shadowColor = 'rgba(255, 197, 12, 1)';
-                ctx.fill();
-                ctx.shadowBlur = 0;
-            }
-
-            requestAnimationFrame(animate);
-        }
-
-        animate();
-    </script>
 </body>
 </html>
